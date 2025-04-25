@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stellar-harvest-ie-models"
+version = "0.1.0"
+description = "Pydantic schemas for all data sources in StellarHarvest Insight Engine"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name="Machine Learning Maverick", email="github@machinelearningmaverick.com" }]
+dependencies = [
+    "pydantic>=1.10.2",
+    "stellar-harvest-ie-config>=0.1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["stellar_harvest_ie_models*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-s -q --disable-warnings --strict-markers --log-cli-level=INFO"
+log_cli = true
+log_cli_level = "DEBUG"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.2.0"]
