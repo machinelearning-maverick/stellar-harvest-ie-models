@@ -9,9 +9,8 @@ description = "Pydantic schemas for all data sources in StellarHarvest Insight E
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name="Machine Learning Maverick", email="github@machinelearningmaverick.com" }]
-dependencies = [
-    "pydantic>=1.10.2",
-    "stellar-harvest-ie-config>=0.1.0"]
+
+dependencies = ["pydantic>=1.10.2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
