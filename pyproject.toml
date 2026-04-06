@@ -11,9 +11,9 @@ requires-python = ">=3.11"
 authors = [{ name="Machine Learning Maverick", email="github@machinelearningmaverick.com" }]
 
 dependencies = [
-    "stellar-harvest-ie-config",
     "pydantic>=1.10.2",
-    "sqlalchemy[asyncio]>=1.4.0"
+    "sqlalchemy[asyncio]>=1.4.0",
+    "stellar-harvest-ie-config",
 ]
 
 [tool.setuptools.packages.find]
