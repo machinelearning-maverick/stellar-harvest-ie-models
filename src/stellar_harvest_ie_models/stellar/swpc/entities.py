@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, DateTime, Float
-from .db import Base
+from stellar_harvest_ie_store.db import Base
 
 
 class KpIndexEntity(Base):
