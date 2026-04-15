@@ -10,11 +10,11 @@ class KpIndexEntity(Base):
     estimated_kp = Column(Float)
     kp = Column(String)
 
-    def __str__(self):
+    def __repr__(self):
         return (
             f"KpIndexEntity(id={self.id}, "
             f"time_tag={self.time_tag}, "
             f"kp_index={self.kp_index}, "
             f"estimated_kp={self.estimated_kp}, "
-            f"kp='{self.kp}'"
+            f"kp='{self.kp}')"
         )

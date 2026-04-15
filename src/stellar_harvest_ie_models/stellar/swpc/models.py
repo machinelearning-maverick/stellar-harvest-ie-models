@@ -18,7 +18,7 @@ class KpIndexRecord(BaseModel):
     dst: Optional[float] = None
     source: Optional[str] = None
 
-    def __str__(self):
+    def __repr__(self):
         return (
             f"KpIndexRecord(time_tag={self.time_tag}, "
             f"kp_index={self.kp_index}, "
