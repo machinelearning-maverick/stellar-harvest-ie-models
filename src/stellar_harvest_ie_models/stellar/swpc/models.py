@@ -17,3 +17,14 @@ class KpIndexRecord(BaseModel):
     mid_latitude_kp_index: Optional[int] = None
     dst: Optional[float] = None
     source: Optional[str] = None
+
+    def __str__(self):
+        return (
+            f"KpIndexRecord(time_tag={self.time_tag}, "
+            f"kp_index={self.kp_index}, "
+            f"estimated_kp={self.estimated_kp}, "
+            f"kp='{self.kp}', "
+            f"mid_latitude_kp_index={self.mid_latitude_kp_index}, "
+            f"dst={self.dst}, "
+            f"source='{self.source}')"
+        )
