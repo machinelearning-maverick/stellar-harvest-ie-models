@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stellar-harvest-ie-models"
-version = "0.3.0"
+version = "0.3.1"
 description = "Pydantic schemas for all data sources in StellarHarvest Insight Engine"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,7 +13,7 @@ authors = [{ name="Machine Learning Maverick", email="github@machinelearningmave
 dependencies = [
     "pydantic>=1.10.2",
     "sqlalchemy[asyncio]>=1.4.0",
-    "stellar-harvest-ie-config",
+    "stellar-harvest-ie-config>=0.1.2",
 ]
 
 [tool.setuptools.packages.find]
