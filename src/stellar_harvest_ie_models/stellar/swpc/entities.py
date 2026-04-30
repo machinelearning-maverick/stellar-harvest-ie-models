@@ -58,6 +58,6 @@ class KpForecastEntity(Base):
             f"predicted_kp={self.predicted_kp}, "
             f"predicted_g={self.predicted_g}, "
             f"model_name='{self.model_name}', "
-            f"model_version='{self.model_version}')",
-            f"created_at={self.created_at})",
+            f"model_version='{self.model_version}', "
+            f"created_at={self.created_at})"
         )
